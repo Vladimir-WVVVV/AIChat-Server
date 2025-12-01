@@ -1,0 +1,13 @@
+*.zip
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+.classpath
+.project
+.settings/
+**/target/
+**/build/
+.mvn/wrapper/maven-wrapper.jar
