@@ -20,6 +20,9 @@ public class Message {
   @Column(nullable = false)
   private String content;
 
+  @Column(name = "image_uri")
+  private String imageUri;
+
   @Column(nullable = false)
   private Integer idx;
 
@@ -36,6 +39,8 @@ public class Message {
   public void setRole(Role role) { this.role = role; }
   public String getContent() { return content; }
   public void setContent(String content) { this.content = content; }
+  public String getImageUri() { return imageUri; }
+  public void setImageUri(String imageUri) { this.imageUri = imageUri; }
   public Integer getIdx() { return idx; }
   public void setIdx(Integer idx) { this.idx = idx; }
   public LocalDateTime getCreatedAt() { return createdAt; }

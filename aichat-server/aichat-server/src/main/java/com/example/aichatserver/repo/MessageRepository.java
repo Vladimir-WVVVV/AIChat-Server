@@ -8,4 +8,5 @@ import java.util.Optional;
 public interface MessageRepository extends JpaRepository<Message, Long> {
   List<Message> findByConversationIdOrderByIdxAsc(Long conversationId);
   Optional<Message> findTopByConversationIdOrderByIdxDesc(Long conversationId);
+  org.springframework.data.domain.Page<Message> findByConversationIdOrderByIdxAsc(Long conversationId, org.springframework.data.domain.Pageable pageable);
 }
